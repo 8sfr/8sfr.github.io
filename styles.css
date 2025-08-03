@@ -28,7 +28,7 @@ body {
 
 h1 {
     /* i hate mobile users */
-    font-size: clamp(16px, 4vw, 32px);
+    font-size: clamp(1.2em, 4vw, 2em);
     font-weight: 600;
     margin: 0 0 0.5em 0;
 }
