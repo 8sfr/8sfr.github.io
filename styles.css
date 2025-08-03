@@ -1,0 +1,84 @@
+:root {
+    --background: #0F0D0B;
+    --text-main: #B2967F;
+    --text-secondary: #756557;
+    --container-bg: #201913;
+    --accent: #B26019;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-main);
+    font-family: 'M PLUS 1p', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--container-bg);
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25), inset 0 0 25px var(--accent);
+    padding: 40px;
+    max-width: 90vw;
+    width: 500px;
+    text-align: center;
+}
+
+h1 {
+    /* i hate mobile users */
+    font-size: clamp(16px, 4vw, 32px);
+    font-weight: 600;
+    margin: 0 0 0.5em 0;
+}
+
+span {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.avatar-wrapper {
+    display: inline-block;
+    padding: 4px;
+    border: 2px solid var(--accent);
+    border-radius: 100%;
+    box-sizing: border-box;
+    margin: 0 10px;
+}
+
+.avatar {
+    max-width: 86px;
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.name {
+    color: var(--accent);
+    font-size: clamp(16px, 4vw, 32px);
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#subtext {
+    margin-top: 1em;
+}
+
+#cursor {
+     color: beige;
+     font-weight: 100;
+     animation: blink 1s steps(1, start) infinite;
+}
+
+@keyframes blink {
+     0% {
+          opacity: 100%;
+     }
+     50% {
+          opacity: 0%;
+     }
+}
