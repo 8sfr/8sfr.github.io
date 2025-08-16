@@ -1,3 +1,8 @@
+const video = document.getElementById("background-video");
+video.addEventListener("loadeddata", () => {
+  video.classList.add("loaded");
+});
+
 function Sleep(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));
 }
