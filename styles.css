@@ -21,6 +21,8 @@ body {
 
 #background-video {
   background-color: var(--background);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,6 +30,10 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+#background-video.loaded {
+  opacity: 1;
 }
 
 @keyframes fadeUp {
