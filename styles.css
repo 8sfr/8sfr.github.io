@@ -20,6 +20,7 @@ body {
 }
 
 #background-video {
+  background-color: var(--background);
   position: fixed;
   top: 0;
   left: 0;
